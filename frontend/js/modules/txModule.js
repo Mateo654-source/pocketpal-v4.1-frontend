@@ -31,7 +31,7 @@
 // ─── Estado del módulo ────────────────────────────────────────────────────────
 
 /** Paginación actual. Se actualiza con cada respuesta del servidor. */
-let _txPagination = { page: 1, limit: 10, total: 0, totalPages: 1 };
+let _txPagination = { page: 1, limit: 5, total: 0, totalPages: 1 };
 
 /** Filtros activos. Se incluyen en cada petición de listado. */
 let _txFilters = {};
