@@ -25,8 +25,8 @@
 
 // ─── Configuración ────────────────────────────────────────────────────────────
 
-/** URL base de la API. Cambiar en producción. */
-const API_BASE = "https://pocketpal-6ydq.onrender.com/api";
+// API_BASE se define en config.js, cargado antes que este archivo en el HTML.
+// De esa forma un solo cambio actualiza toda la aplicación.
 
 // ─── Auth helpers ─────────────────────────────────────────────────────────────
 
