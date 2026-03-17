@@ -25,6 +25,8 @@
             href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet" />
 
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
         <!-- Estilos: base → componentes → página -->
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/components.css" />
@@ -39,7 +41,9 @@
     <body>
         <div class="app-shell">
             <!-- ── Sidebar ─────────────────────────────────────────────────────────── -->
-            <aside id="sidebar" class="sidebar flex-col bg-nova-bg2">
+            <aside
+                id="sidebar"
+                class="sidebar flex flex-col bg-POKI-bg2 border-r fixed lg:sticky top-0 left-0 h-full lg:h-screen w-[240px] transform -translate-x-full lg:translate-x-0 transition-transform duration-300 z-40">
                 <!-- Logo -->
                 <div class="sidebar-logo">
                     <div
@@ -803,7 +807,7 @@
        7. dashboard.js         — orquestador: loadAllData, renderStats, init
        8. script.js            — sidebar móvil
      ════════════════════════════════════════════════════════════════════════ -->
-     
+
         <script src="js/api.js"></script>
         <script src="js/modules/ui.js"></script>
         <script src="js/modules/charts.js"></script>
