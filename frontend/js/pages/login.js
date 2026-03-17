@@ -124,5 +124,5 @@ registerForm.addEventListener("submit", async (e) => {
  * al dashboard con el token en los query params.
  */
 btnGoogle.addEventListener("click", () => {
-    window.location.href = "/api/auth/google";
+    window.location.href = "https://pocketpal-6ydq.onrender.com/api/auth/google";
 });
