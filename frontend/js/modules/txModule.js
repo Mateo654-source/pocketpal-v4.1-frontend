@@ -407,6 +407,7 @@ async function handleSubmitTx(e) {
     } catch (err) {
         toast.error(err.message);
     } finally {
-    setButtonReady(btn); 
-}
+        const currentBtn = document.getElementById("submit-tx-btn");
+        if (currentBtn) setButtonReady(currentBtn);
+    }
 }
