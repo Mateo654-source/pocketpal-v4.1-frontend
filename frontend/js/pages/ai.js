@@ -119,7 +119,7 @@ async function sendMessage() {
     addBubble('assistant', reply, new Date(res.data.timestamp));
   } catch (err) {
     typingEl.remove();
-    addBubble('assistant', '⚠️ Ocurrió un error al conectar con NOVA. Por favor intenta de nuevo.');
+    addBubble('assistant', '⚠️ Ocurrió un error al conectar con POKI. Por favor intenta de nuevo.');
     console.error('[ai.js] sendMessage error:', err);
   } finally {
     isTyping         = false;

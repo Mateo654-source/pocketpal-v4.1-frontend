@@ -180,6 +180,7 @@ async function handleSubmitCategory(e) {
         if (typeof loadAllData === "function") await loadAllData();
     } catch (err) {
         toast.error(err.message);
+    } finally {
         setButtonReady(btn);
     }
 }

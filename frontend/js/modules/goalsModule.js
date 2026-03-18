@@ -249,6 +249,7 @@ async function handleSubmitGoal(e) {
         if (typeof loadAllData === "function") await loadAllData();
     } catch (err) {
         toast.error(err.message);
+    } finally {
         setButtonReady(btn);
     }
 }
@@ -309,6 +310,7 @@ async function handleAllocate(e) {
         }
     } catch (err) {
         toast.error(err.message);
+    } finally {
         setButtonReady(btn);
     }
 }

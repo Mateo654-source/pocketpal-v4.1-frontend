@@ -387,7 +387,6 @@ async function handleSubmitTx(e) {
             // Actualizar transacción existente — el endpoint PUT requiere fecha obligatoria
             if (!payload.date) {
                 toast.error("La fecha es requerida para actualizar");
-                setButtonReady(btn);
                 return;
             }
             await transactions.update(txId, payload);
@@ -407,6 +406,7 @@ async function handleSubmitTx(e) {
         else await loadTransactions();
     } catch (err) {
         toast.error(err.message);
-        setButtonReady(btn);
-    }
+    } finally {
+    setButtonReady(btn); 
+}
 }
